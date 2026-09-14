@@ -1,136 +1,44 @@
-# Developer Portfolio — Next.js App Router
+# Jeferson Pinho — Developer Portfolio
 
-A senior-level developer portfolio built with **Next.js 14 App Router**, TypeScript, Tailwind CSS, and Framer Motion.
+Portfólio pessoal desenvolvido para apresentar meus **projetos, experiências e tecnologias** utilizadas no desenvolvimento de aplicações web.
 
-## Tech Stack
+O site reúne projetos reais, plataformas SaaS, sistemas de gestão, sites institucionais e e-commerces desenvolvidos ao longo da minha experiência como desenvolvedor.
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: React Icons
-- **Fonts**: Sora (sans) + Fira Code (mono) via Google Fonts
-- **Deployment**: Vercel
+## Funcionalidades
 
-## Getting Started
+* Apresentação profissional
+* Tecnologias e ferramentas utilizadas
+* Projetos em destaque
+* Histórico de experiências
+* Integração com GitHub
+* Links para projetos publicados
+* Contato por e-mail, WhatsApp e LinkedIn
+* Layout totalmente responsivo
 
-### 1. Install dependencies
+## Tecnologias
 
-```bash
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* React Icons
+* Vercel
+
+## Como executar
+
+git clone [https://github.com/JefersonPinho/portfolio.git](https://github.com/JefersonPinho/portfolio.git)
+
+cd portfolio
+
 npm install
-```
 
-### 2. Configure environment variables
-
-```bash
-cp .env.example .env.local
-```
-
-Edit `.env.local` and set:
-- `GITHUB_USERNAME` — your GitHub username (for the repos section)
-- `GITHUB_TOKEN` — optional, prevents API rate limiting
-
-### 3. Personalize your content
-
-| File | What to change |
-|------|---------------|
-| `data/projects.ts` | Your projects |
-| `data/skills.ts` | Your skill set |
-| `data/experience.ts` | Work history |
-| `app/layout.tsx` | SEO metadata, your name |
-| `components/layout/navbar.tsx` | Your name/logo |
-| `components/layout/footer.tsx` | Social links |
-| `components/sections/hero/hero-section.tsx` | Hero copy & links |
-| `components/sections/contact/contact-section.tsx` | Contact info |
-
-### 4. Add project images
-
-Place project images in `public/images/projects/`:
-- `pinho-nuts.jpg`
-- `pastore-dashboard.jpg`
-- `portfolio.jpg`
-
-Or update image paths in `data/projects.ts`.
-
-### 5. Run development server
-
-```bash
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000).
+Depois acesse:
 
-## Deploy to Vercel
+[http://localhost:3000](http://localhost:3000)
 
-```bash
-npx vercel
-```
+---
 
-Or push to GitHub and import the repo at [vercel.com/new](https://vercel.com/new).
-
-Add your environment variables in the Vercel dashboard under **Settings → Environment Variables**.
-
-## Project Structure
-
-```
-portfolio/
-├── app/                    # Next.js App Router
-│   ├── layout.tsx          # Root layout, fonts, metadata
-│   ├── page.tsx            # Home page (all sections)
-│   ├── globals.css         # Design tokens + base styles
-│   ├── projects/page.tsx   # All projects page
-│   └── contact/page.tsx    # Contact page
-├── components/
-│   ├── ui/                 # Primitive UI components
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   └── badge.tsx
-│   ├── layout/             # Layout components
-│   │   ├── navbar.tsx
-│   │   ├── footer.tsx
-│   │   └── container.tsx
-│   └── sections/           # Page sections
-│       ├── hero/
-│       ├── about/
-│       ├── skills/
-│       ├── projects/
-│       ├── experience/
-│       ├── github/
-│       └── contact/
-├── data/                   # Static data
-│   ├── projects.ts
-│   ├── skills.ts
-│   └── experience.ts
-├── hooks/                  # Custom React hooks
-│   ├── useScroll.ts
-│   └── useRevealAnimation.ts
-├── lib/                    # Utilities
-│   ├── github.ts
-│   └── utils.ts
-└── types/                  # TypeScript types
-    ├── project.ts
-    ├── experience.ts
-    └── github.ts
-```
-
-## Connect a Contact Form
-
-Replace the mock form submission in `components/sections/contact/contact-section.tsx` with a real service:
-
-- **[Resend](https://resend.com)** — Email API (recommended)
-- **[Formspree](https://formspree.io)** — Simple form backend
-- **[EmailJS](https://emailjs.com)** — Client-side email
-
-## Performance
-
-This project is optimized for Lighthouse scores above 90:
-
-- `next/image` for automatic image optimization
-- Google Fonts loaded with `next/font` (zero layout shift)
-- Server Components by default (GitHub section)
-- `ISR` with `next: { revalidate: 3600 }` for GitHub data
-- Semantic HTML and ARIA attributes throughout
-
-## License
-
-MIT
+Desenvolvido por **Jeferson Pinho**
